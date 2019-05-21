@@ -34,7 +34,6 @@ client.connect(err => {
 						row.birthdate.toLocaleDateString()
 				)
 			);
-			// console.log(res.rows);
 			client.end();
 		}
 	);
