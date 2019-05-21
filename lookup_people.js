@@ -22,9 +22,11 @@ client.connect(err => {
 			if (err) {
 				return console.error("error running query", err);
 			}
-			res.rows.forEach(row =>
+			res.rows.forEach((row, index) =>
 				console.log(
 					"- " +
+						(index + 1) +
+						": " +
 						row.first_name +
 						" " +
 						row.last_name +
