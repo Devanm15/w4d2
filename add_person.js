@@ -22,3 +22,4 @@ knex("famous_people")
 		console.log("result:", rows);
 	});
 
+// - If value does exist run knex commant else err 
